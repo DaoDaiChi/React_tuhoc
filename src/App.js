@@ -8,6 +8,7 @@ import Counter from './components/counter';
 import EventBind from './components/EventBind';
 import ParentComponents from './components/ParentComponents';
 import UserGreeting from './components/UserGreeting';
+import NameList from './components/NameList';
 function App() {
   return (
     <div className="App">
@@ -35,7 +36,8 @@ function App() {
       <Counter/>
       <EventBind/> */}
       {/* <ParentComponents/> */}
-      <UserGreeting/>
+      {/* <UserGreeting/> */}
+      <NameList/>
     </div>
   );
 }
