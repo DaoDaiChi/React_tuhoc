@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Person from './Person'
 function NameList() {
     const person = [
         {
@@ -23,11 +23,9 @@ function NameList() {
             skill: 'Golang'
         }
    ]
-   const personList = person.map(person => (
-    <h2>
-        I am {person.name} with {person.skill}
-    </h2>
-    ))
+   const personList = person.map(person => 
+    <Person key = {person.id} person ={person}/>
+    )
   return (
     <div>{personList}</div>
   )

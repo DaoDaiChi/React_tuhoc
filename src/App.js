@@ -9,9 +9,13 @@ import EventBind from './components/EventBind';
 import ParentComponents from './components/ParentComponents';
 import UserGreeting from './components/UserGreeting';
 import NameList from './components/NameList';
+import Stylesheet from './components/stylesheet';
+import Inline from './components/Inline';
 function App() {
   return (
     <div className="App">
+      <Stylesheet primary ={true}/>
+      <Inline/>
       {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -37,7 +41,7 @@ function App() {
       <EventBind/> */}
       {/* <ParentComponents/> */}
       {/* <UserGreeting/> */}
-      <NameList/>
+      {/* <NameList/> */}
     </div>
   );
 }
